@@ -105,7 +105,7 @@ function DataArea() {
       return values.indexOf(filter.toLowerCase()) !== -1;
     });
     setUsers({ ...usersState, filteredUsers: filteredList });
-  }
+  };
 
   return (
     <UserContext.Provider value={{ headings, usersState, order, handleSort, handleSearchChange, handleDOBSort }}>
