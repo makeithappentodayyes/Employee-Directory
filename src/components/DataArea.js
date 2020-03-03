@@ -47,7 +47,7 @@ function DataArea() {
         }
         // numerically
         else if (heading === "name") {
-          return a[heading].first.localeCompare(b[heading].first);
+          return a[heading].last.localeCompare(b[heading].last);
         } else if (heading === "email") {
           return a[heading].localeCompare(b[heading]);
         } else if (heading === "dob") {
@@ -66,7 +66,7 @@ function DataArea() {
         }
         // numerically
         else if (heading === "name") {
-          return b[heading].first.localeCompare(a[heading].first);
+          return b[heading].last.localeCompare(a[heading].last);
         } else if (heading === "email") {
           return b[heading].localeCompare(a[heading]);
         } else if (heading === "dob") {
