@@ -11,6 +11,3 @@ function Header() {
 };
 
 export default Header;
-
-
-// header component changed from Class based component to funtcional component  

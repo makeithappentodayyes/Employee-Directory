@@ -39,14 +39,11 @@ function DataArea() {
 
     function compareFnc(a, b) {
       if (order === "ascend") {
-        // account for missing values
         if (a[heading] === undefined) {
           return 1;
         } else if (b[heading] === undefined) {
           return -1;
-        }
-        // numerically
-        else if (heading === "name") {
+        } else if (heading === "name") {
           return a[heading].last.localeCompare(b[heading].last);
         } else if (heading === "email") {
           return a[heading].localeCompare(b[heading]);
@@ -60,14 +57,11 @@ function DataArea() {
           return a[heading] - b[heading];
         }
       } else {
-        // account for missing values
         if (a[heading] === undefined) {
           return 1;
         } else if (b[heading] === undefined) {
           return -1;
-        }
-        // numerically
-        else if (heading === "name") {
+        } else if (heading === "name") {
           return b[heading].last.localeCompare(a[heading].last);
         } else if (heading === "email") {
           return b[heading].localeCompare(a[heading]);
